@@ -8,7 +8,7 @@
 
 An example of a small Kernel
 
-kernel type: monolithic
+The kernel type is `monolithic`
 
 > A monolithic kernel is an operating system architecture where the entire operating system is working in kernel space. The monolithic model differs from other operating system architectures (such as the microkernel architecture) in that it alone defines a high-level virtual interface over computer hardware.
 
@@ -20,10 +20,22 @@ kernel type: monolithic
 ```
 build.sh 
 ```
-
+- bin 
+    - Minix.bin
+- build
+- iso
+    - boot
+        - grub
+    - Minix.bin
+    - build
+        - Minix.iso
 ```
 qemu-system-x86_64 -cdrom iso/build/Minix.iso
 ```
+<p align="center">
+<img src="./resources/screenshot/boot.jpg">
+</p>
+
 ## Tree
 - drivers
     - keyboard
