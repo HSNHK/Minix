@@ -1,4 +1,4 @@
-#include "../types.h"
+#include <kernel/types.h>
 
 
 uint8 inb(uint16 port)

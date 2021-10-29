@@ -4,7 +4,7 @@
 #define VGA_ADDRESS 0xB8000
 #define BUFSIZE 2200
 
-#include "../../kernel/types.h"
+#include <kernel/types.h>
 
 uint16* vga_buffer;
 extern uint32 vga_index;

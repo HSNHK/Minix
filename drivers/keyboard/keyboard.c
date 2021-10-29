@@ -1,6 +1,6 @@
-#include "../../kernel/values.h"
-#include "../../kernel/types.h"
-#include "../../kernel/io/io.h"
+#include <kernel/values.h>
+#include <kernel/types.h>
+#include <kernel/io/io.h>
 #include "keyboard.h"
 
 _byte get_input_keycode()

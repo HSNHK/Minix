@@ -1,8 +1,8 @@
-#include "../keyboard/keyboard.h"
-#include "../../kernel/values.h"
-#include "../../kernel/types.h"
-#include "../../kernel/utils.h"
-#include "../../kernel/io/io.h"
+#include <drivers/keyboard/keyboard.h>
+#include <kernel/values.h>
+#include <kernel/types.h>
+#include <kernel/utils.h>
+#include <kernel/io/io.h>
 
 #include "console.h"
 
