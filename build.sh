@@ -24,6 +24,7 @@ compile "kernel/utils.c" "build/kernel/utils.o"
 compile "kernel/io/io.c" "build/kernel/io/io.o"
 compile "drivers/keyboard/keyboard.c" "build/drivers/keyboard/keyboard.o"
 compile "drivers/vga/console.c" "build/drivers/vga/console.o"
+compile "drivers/vga/gui.c" "build/drivers/vga/gui.o"
 
 echo "[*] build successfully"
 
@@ -35,6 +36,7 @@ ld -m elf_i386 -T linker.ld build/boot.o \
         build/kernel/io/io.o \
         build/drivers/keyboard/keyboard.o \
         build/drivers/vga/console.o \
+        build/drivers/vga/gui.o \
         -o bin/Minix.bin -nostdlib
 
 echo "[*] Link successfully"
