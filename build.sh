@@ -4,6 +4,7 @@ echo "[@] Create directories to build"
 mkdir -p build/kernel/io
 mkdir -p build/drivers/keyboard
 mkdir -p build/drivers/vga
+mkdir -p build/drivers/power
 mkdir bin
 echo "[*] Directories created successfully"
 
@@ -25,6 +26,7 @@ compile "kernel/io/io.c" "build/kernel/io/io.o"
 compile "drivers/keyboard/keyboard.c" "build/drivers/keyboard/keyboard.o"
 compile "drivers/vga/console.c" "build/drivers/vga/console.o"
 compile "drivers/vga/gui.c" "build/drivers/vga/gui.o"
+compile "drivers/power/power.c" "build/drivers/power/power.o"
 
 echo "[*] build successfully"
 
@@ -37,6 +39,7 @@ ld -m elf_i386 -T linker.ld build/boot.o \
         build/drivers/keyboard/keyboard.o \
         build/drivers/vga/console.o \
         build/drivers/vga/gui.o \
+        build/drivers/power/power.o \
         -o bin/Minix.bin -nostdlib
 
 echo "[*] Link successfully"
